@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cletus Mangu - Cloud Computing Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="cletus.jpg" alt="Profile" class="profile-img">
+        <h1>Cletus Mangu</h1>
+        <p>Aspiring Cloud Computing Professional</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate student learning cloud computing and AWS. Currently pursuing my journey to become a certified cloud professional.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>Cloud Computing</h3>
+                    <p>Learning AWS services and cloud architecture</p>
+                </div>
+                <div class="skill-card">
+                    <h3>HTML/CSS</h3>
+                    <p>Building responsive web applications</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Simple interactive feature
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillCards = document.querySelectorAll('.skill-card');
+            skillCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.style.backgroundColor = '#4f46e5';
+                    this.style.color = 'white';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
